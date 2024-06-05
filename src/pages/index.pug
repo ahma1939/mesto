@@ -1,0 +1,47 @@
+extends ../layouts/default
+
+block variables
+	- var title = "Место";
+	- var pageStylesheet = "/index.css";
+
+block content
+	.main
+		section.profile
+			button.profile__add-button(aria-label="Добавить", type="button")
+			.profile__box
+				img.profile__avatar(src="./images/Kusto.jpg", alt="Аватар пользователя")
+				.profile__info
+					h1.profile__name Жак-Ив Кусто
+					button.profile__edit-button(aria-label="Редактировать", type="button")
+					p.profile__description Исследователь океана
+		section.elements
+			article.element
+				img.element__item(src="./images/Dombai.jpg", alt="Домбай")
+				.element__info
+					h2.element__title Домбай
+					button.element__like-button(type="button")
+			article.element
+				img.element__item(src="./images/Elbrus.jpg", alt="Эльбрус")
+				.element__info
+					h2.element__title Гора Эльбрус
+					button.element__like-button(type="button")
+			article.element
+				img.element__item(src="./images/Karachaevsk.jpg", alt="Карачаевск")
+				.element__info
+					h2.element__title Карачаевск
+					button.element__like-button(type="button")
+			article.element
+				img.element__item(src="./images/Dombai.jpg", alt="Домбай")
+				.element__info
+					h2.element__title Домбай
+					button.element__like-button(type="button")
+			article.element
+				img.element__item(src="./images/Elbrus.jpg", alt="Эльбрус")
+				.element__info
+					h2.element__title Гора Эльбрус
+					button.element__like-button(type="button")
+			article.element
+				img.element__item(src="./images/Karachaevsk.jpg", alt="Карачаевск")
+				.element__info
+					h2.element__title Карачаевск
+					button.element__like-button(type="button")
