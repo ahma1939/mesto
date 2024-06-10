@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesto</title>
+    <link rel="icon" type="image/svg" href="#">
+    <link rel="stylesheet" href="./pages/index.css">
+    <script src="./scripts/index.js" defer></script>
+</head>
+
+<body class="page">
+    <header class="header">
+        <img class="header__logo" src="images/logo.svg" alt="Лого Место">
+    </header>
+
+    <div class="main">
+        <section class="profile">
+            <button class="profile__add-button" aria-label="Добавить" type="button"></button>
+            <div class="profile__box">
+                <img class="profile__avatar" src="./images/Kusto.jpg" alt="Аватар пользователя">
+                <div class="profile__info">
+                    <h1 class="profile__name">Жак-Ив Кусто</h1>
+                    <button class="profile__edit-button" aria-label="Редактировать" type="button"></button>
+                    <p class="profile__description">Исследователь океана</p>
+                </div>
+            </div>
+        </section>
+        <section class="elements">
+            <article class="element">
+                <img class="element__item" src="./images/Dombai.jpg" alt="Домбай">
+                <div class="element__info">
+                    <h2 class="element__title">Домбай</h2>
+                    <button class="element__like-button" type="button"></button>
+                </div>
+            </article>
+            <article class="element">
+                <img class="element__item" src="./images/Elbrus.jpg" alt="Эльбрус">
+                <div class="element__info">
+                    <h2 class="element__title">Гора Эльбрус</h2>
+                    <button class="element__like-button" type="button"></button>
+                </div>
+            </article>
+            <article class="element">
+                <img class="element__item" src="./images/Karachaevsk.jpg" alt="Карачаевск">
+                <div class="element__info">
+                    <h2 class="element__title">Карачаевск</h2>
+                    <button class="element__like-button" type="button"></button>
+                </div>
+            </article>
+            <article class="element">
+                <img class="element__item" src="./images/Dombai.jpg" alt="Домбай">
+                <div class="element__info">
+                    <h2 class="element__title">Домбай</h2>
+                    <button class="element__like-button" type="button"></button>
+                </div>
+            </article>
+            <article class="element">
+                <img class="element__item" src="./images/Elbrus.jpg" alt="Эльбрус">
+                <div class="element__info">
+                    <h2 class="element__title">Гора Эльбрус</h2>
+                    <button class="element__like-button" type="button"></button>
+                </div>
+            </article>
+            <article class="element">
+                <img class="element__item" src="./images/Karachaevsk.jpg" alt="Карачаевск">
+                <div class="element__info">
+                    <h2 class="element__title">Карачаевск</h2>
+                    <button class="element__like-button" type="button"></button>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer class="footer">
+        <p class="footer__copyright">&copy; 2023 | Ahma Abdullaev</p>
+    </footer>
+
+    <div class="popup">
+        <div class="popup__container">
+            <button class="popup__close-button" aria-label="Закрыть" type="button"></button>
+            <form novalidate class="popup__form" name="popup__form">
+                <h2 class="popup__title">Редактировать профиль</h2>
+                <input class="popup__input popup__input_type_name" id="input-name" name="input-name_edit-profile"
+                    type="text" placeholder="Введите имя" minlength="1" maxlength="60" autocomplete="off" required>
+                <input class="popup__input popup__input_type_description" id="input-description"
+                    name="input-description" type="text" placeholder="Введите описание" minlength="1" maxlength="60"
+                    autocomplete="off" required>
+                <button class="popup__submit-button" type="submit">Сохранить</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
