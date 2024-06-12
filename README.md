@@ -1,7 +1,7 @@
 # Проект: Место
 
 Ссылка:
-https://ahma1939.github.io/mesto/
+https://ahma1939.github.io/mesto-project-ff/
 
 
 ### Обзор
