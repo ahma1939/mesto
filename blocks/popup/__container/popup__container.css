@@ -8,7 +8,7 @@
     padding: 0;
     position: relative;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 1279px) {
